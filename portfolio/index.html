@@ -92,7 +92,12 @@ h1.hname .d3{color:var(--cyan);text-shadow:0 0 40px rgba(0,210,255,.4);}
 .about-grid{display:grid;grid-template-columns:340px 1fr;gap:4rem;align-items:start;}
 .about-card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:2rem;position:relative;overflow:hidden;}
 .about-card::before{content:'';position:absolute;top:-30%;right:-30%;width:200px;height:200px;background:radial-gradient(circle,rgba(0,210,255,.08),transparent);border-radius:50%;pointer-events:none;}
-.avatar{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--cyan),rgba(0,210,255,.3));display:flex;align-items:center;justify-content:center;font-family:var(--head);font-size:1.8rem;color:var(--bg);font-weight:700;margin-bottom:1.2rem;box-shadow:0 0 30px rgba(0,210,255,.25);}
+.avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:50%;
+}
 .ab-name{font-family:var(--head);font-size:1.5rem;letter-spacing:1px;margin-bottom:.2rem;}
 .ab-role{font-family:var(--mono);font-size:.75rem;color:var(--cyan);letter-spacing:1.5px;margin-bottom:1.5rem;}
 .ab-row{display:flex;align-items:center;gap:10px;font-size:.88rem;color:var(--txt2);padding:.4rem 0;border-bottom:1px solid rgba(0,210,255,.05);}
@@ -245,7 +250,17 @@ footer{position:relative;z-index:2;background:var(--bg);border-top:1px solid var
   .hero-stats{grid-template-columns:1fr 1fr;}
   .hstat:last-child{grid-column:span 2;}
 }
+
+.proj-card:hover{
+  border-color:var(--border2);
+  transform:translateY(-4px);
+  box-shadow:0 0 30px rgba(0,210,255,.15);
+}
 </style>
+<meta
+  name="description"
+  content="Vishnu Narayanan Harish - AI Engineer, Conversational AI Developer, Spring Boot Backend Engineer, and M.Tech AI/ML researcher specializing in scalable enterprise systems and Generative AI applications."
+/>
 </head>
 <body>
 
@@ -273,29 +288,39 @@ footer{position:relative;z-index:2;background:var(--bg);border-top:1px solid var
     <div class="hero-left">
       <div class="tag-line"><div class="tag-dot"></div>Available for Opportunities</div>
       <h1 class="hname">
-        <div class="d1">Vishnu</div>
-        <div class="d2">Narayanan</div>
-        <div class="d3">Harish</div>
+        <div class="d3">Vishnu</div>
+        <div class="d1">Narayanan</div>
+        <div class="d2">Harish</div>
       </h1>
       <div class="hero-role">
-        <span class="hl">Kore.ai Developer</span>
-        <span class="sep">·</span>
-        Spring Boot Engineer
-        <span class="sep">·</span>
-        M.Tech AI/ML
-        <br/>
-        <span class="hl">Cognizant</span>
-        <span class="sep">·</span>
-        Amrita Vishwa Vidyapeetham
-        <span class="sep">·</span>
-        Kollam, India
+         <span class="hl">AI Engineer</span>
+  <span class="sep">·</span>
+  Conversational AI Developer
+  <span class="sep">·</span>
+  Backend Engineer
+  <br/>
+  <span class="hl">Spring Boot</span>
+  <span class="sep">·</span>
+  Generative AI
+  <span class="sep">·</span>
+  Kubernetes
       </div>
       <p class="hero-desc">
         Software engineer with hands-on production experience in IVR &amp; chatbot development using Kore.ai, secure REST APIs with Spring Boot &amp; JWT, and containerized microservices with Docker &amp; Kubernetes. Currently pursuing M.Tech in Artificial Intelligence &amp; Machine Learning.
       </p>
       <div class="hero-btns">
+        <div class="tag-wrap" style="margin-bottom:2rem;">
+        <div class="atag">Spring Boot</div>
+        <div class="atag">Kore.ai</div>
+        <div class="atag">Generative AI</div>
+        <div class="atag">Docker</div>
+        <div class="atag">Kubernetes</div>
+        <div class="atag">RAG Systems</div>
+        <div class="atag">Microservices</div>
+</div>
         <a href="#experience" class="btn-p">View Experience</a>
         <a href="#contact" class="btn-s">Contact Me</a>
+        
       </div>
       <div class="hero-stats">
         <div class="hstat">
@@ -328,9 +353,13 @@ footer{position:relative;z-index:2;background:var(--bg);border-top:1px solid var
   <div class="s-line"></div>
   <div class="about-grid">
     <div class="about-card sr">
-      <div class="avatar">VH</div>
+      <div class="avatar">
+   <img src="Lprofile.jfif" alt="Vishnu Narayanan Harish"/>
+  </div>
       <div class="ab-name">Vishnu Narayanan Harish</div>
-      <div class="ab-role">Software Engineer · AI/ML Researcher</div>
+      <div class="ab-role">
+           AI Engineer · Conversational AI Developer · Backend Engineer
+      </div>
       <div class="ab-row"><div class="ab-dot"></div><div class="ab-key">Email</div>vishnunarayananharish@gmail.com</div>
       <div class="ab-row"><div class="ab-dot"></div><div class="ab-key">Phone</div>+91 9074376745</div>
       <div class="ab-row"><div class="ab-dot"></div><div class="ab-key">Location</div>Kollam, India</div>
@@ -644,7 +673,7 @@ footer{position:relative;z-index:2;background:var(--bg);border-top:1px solid var
     </div>
 
     <!-- Project 4 -->
-    <div class="proj-card sr">
+    <div class="proj-card feat sr">
 
       <div class="proj-num">04</div>
 
@@ -689,12 +718,24 @@ footer{position:relative;z-index:2;background:var(--bg);border-top:1px solid var
 
 </section>
 <!-- ═══════════ CERTIFICATIONS ═══════════ -->
+<!-- ═══════════ CERTIFICATIONS ═══════════ -->
 <section id="certs" class="s-alt2">
   <div class="eyebrow">Credentials</div>
   <div class="s-title">Certifications</div>
   <div class="s-line"></div>
+
   <div class="cert-grid">
 
+    <!-- Certificate 1 -->
+    <div class="cert-card sr">
+      <div class="cert-ico">🔐</div>
+      <div>
+        <div class="cert-name">NPTEL — Cryptography and Network Security</div>
+        <div class="cert-by">NPTEL · IIT Certified Program</div>
+      </div>
+    </div>
+
+    <!-- Certificate 2 -->
     <div class="cert-card sr">
       <div class="cert-ico">🤖</div>
       <div>
@@ -703,6 +744,7 @@ footer{position:relative;z-index:2;background:var(--bg);border-top:1px solid var
       </div>
     </div>
 
+    <!-- Certificate 3 -->
     <div class="cert-card sr">
       <div class="cert-ico">🐍</div>
       <div>
@@ -711,8 +753,9 @@ footer{position:relative;z-index:2;background:var(--bg);border-top:1px solid var
       </div>
     </div>
 
+    <!-- Certificate 4 -->
     <div class="cert-card sr">
-      <div class="cert-ico">☕</div>
+      <div class="cert-ico">💻</div>
       <div>
         <div class="cert-name">Java, Python &amp; SQL</div>
         <div class="cert-by">Udemy · Course Completion Certificate</div>
@@ -721,7 +764,57 @@ footer{position:relative;z-index:2;background:var(--bg);border-top:1px solid var
 
   </div>
 </section>
+<section id="now">
 
+  <div class="eyebrow">Current Focus</div>
+  <div class="s-title">Currently Working On</div>
+  <div class="s-line"></div>
+
+  <div class="skills-grid">
+
+    <div class="sk-card sr">
+      <div class="sk-head">
+        <div class="sk-ic">🌾</div>
+        <div class="sk-lbl">Generative AI</div>
+      </div>
+
+      <div class="sk-chips">
+        <div class="chip">Farmer AI Assistant</div>
+        <div class="chip">Mistral-7B</div>
+        <div class="chip">LoRA Fine-Tuning</div>
+        <div class="chip">RAG Systems</div>
+      </div>
+    </div>
+
+    <div class="sk-card sr">
+      <div class="sk-head">
+        <div class="sk-ic">⚛️</div>
+        <div class="sk-lbl">Frontend Development</div>
+      </div>
+
+      <div class="sk-chips">
+        <div class="chip">ReactJS</div>
+        <div class="chip">Modern UI Design</div>
+        <div class="chip">Responsive Design</div>
+      </div>
+    </div>
+
+    <div class="sk-card sr">
+      <div class="sk-head">
+        <div class="sk-ic">🧠</div>
+        <div class="sk-lbl">AI Research</div>
+      </div>
+
+      <div class="sk-chips">
+        <div class="chip">Deep Learning</div>
+        <div class="chip">Computer Vision</div>
+        <div class="chip">Prediction Models</div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
 <!-- ═══════════ CONTACT ═══════════ -->
 <section id="contact" class="s-alt">
   <div class="eyebrow">Get In Touch</div>
